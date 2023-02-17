@@ -50,7 +50,7 @@ All Categories
                                 </td>
                                 <td>
                                     <a href="{{ route('admin.editcategory', $category->id) }}" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                                    <a href="#" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                    <a href="{{ route('admin.deletecategory', $category->id) }}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
                                 </td>
                           </tr>
                         @endforeach
