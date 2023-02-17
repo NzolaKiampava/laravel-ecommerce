@@ -18,17 +18,18 @@ Create Category
                     </ul>
                 </div>
             @endif
-            <form action="{{ route('admin.storecategory') }}" method="POST">
+            <form action="{{ route('admin.updatecategory') }}" method="POST">
                 @csrf
                 <div class="card-body">
+                    <input type="hidden" value="{{$category_info->id}}" name="category_id">
                     <div class="form-group">
                       <label for="category_name">Enter Category Name</label>
-                      <input type="text" class="form-control" id="category_name" name="category_name" placeholder="Electronics" values="{{category_info->}}">
+                      <input type="text" class="form-control" id="category_name" name="category_name" placeholder="Electronics" value="{{$category_info->category_name}}">
                     </div>
                 </div>
 
                 <div class="card-footer">
-                <button type="submit" class="btn btn-primary">Create Category</button>
+                <button type="submit" class="btn btn-primary">Update Category</button>
                 </div>
             </form>
           </div>
