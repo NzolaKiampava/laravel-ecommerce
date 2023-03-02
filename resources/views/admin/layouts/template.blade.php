@@ -18,6 +18,8 @@
   <!-- Datatable CSS -->
   <link rel="stylesheet" href="{{ asset('dashboard_asset/assets/bundles/datatables/datatables.min.css') }}">
   <link rel="stylesheet" href="{{ asset('dashboard_asset/assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
+
+  @livewireStyles
 </head>
 
 <body>
@@ -257,6 +259,8 @@
     <script src="{{ asset('dashboard_asset/assets/bundles/jquery-ui/jquery-ui.min.js') }}"></script>
     <!-- Page Specific JS File -->
     <script src="{{ asset('dashboard_asset/assets/js/page/datatables.js') }}"></script>
+
+    @livewireScripts
 </body>
 
 
